@@ -1,0 +1,129 @@
+/* =========================
+   Sidebar Style - ShopGrids Custom
+   ========================= */
+
+.product-sidebar {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.product-sidebar .single-widget {
+    margin-bottom: 35px;
+}
+
+.product-sidebar .single-widget h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #081828;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.product-sidebar .single-widget.search form {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-sidebar .single-widget.search input {
+    flex: 1;
+    border: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+.product-sidebar .single-widget.search button {
+    background: #0167f3;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-sidebar .single-widget ul.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-sidebar .single-widget ul.list li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-sidebar .single-widget ul.list li a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product-sidebar .single-widget ul.list li a:hover {
+    color: #0167f3;
+}
+
+.product-sidebar .single-widget ul.list li span {
+    color: #888;
+    font-size: 14px;
+}
+
+.product-sidebar .range {
+    padding-top: 10px;
+}
+
+.product-sidebar .range input[type="range"] {
+    width: 100%;
+    accent-color: #0167f3;
+}
+
+.product-sidebar .range-inner {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.product-sidebar .range-inner label {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.product-sidebar .range-inner input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 80px;
+}
+
+.product-sidebar .form-check {
+    margin-bottom: 8px;
+}
+
+.product-sidebar .form-check-input:checked {
+    background-color: #0167f3;
+    border-color: #0167f3;
+}
+
+.product-sidebar .form-check-label {
+    color: #555;
+    font-weight: 500;
+}
+
+/* تحسين المظهر في الشاشات الصغيرة */
+@media (max-width: 991px) {
+    .product-sidebar {
+        margin-top: 20px;
+    }
+}
+
+
