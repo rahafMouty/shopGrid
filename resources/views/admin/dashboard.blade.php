@@ -212,9 +212,11 @@ $('#categories-table').on('click', '.edit-btn', function() {
 $('#saveCategoryBtn').click(function () {
 
     let formData = {
-        name: $('input[name="name"]').val(),
+        category_name: $('input[name="category_name"]').val(),
+        category_description: $('input[name="category_description"]').val(),
         _token: '{{ csrf_token() }}'
     };
+    console.log(formData)
 
     $.ajax({
         url: "{{ route('admin.categories.store') }}",
@@ -224,8 +226,6 @@ $('#saveCategoryBtn').click(function () {
 
             $('#addCategoryModal').modal('hide');
             $('#addCategoryForm')[0].reset();
-
-            // Reload DataTable
             $('#categories-table').DataTable().ajax.reload();
 
         },
@@ -244,9 +244,9 @@ $('#updateCategoryBtn').click(function () {
 
     $.ajax({
         url: "/admin/categories/" + categoryId, // ← PUT URL الصحيح
-        type: "PUT", // ← استخدم PUT
+        type: "PUT",
         data: {
-            name: $('input[name="category_name"]').val(),
+            name: $('input[name="category_name_update"]').val(),
             _token: '{{ csrf_token() }}'
         },
         success: function(response) {

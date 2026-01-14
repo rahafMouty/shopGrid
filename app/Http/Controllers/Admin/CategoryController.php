@@ -4,13 +4,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Http\Requests\Category\{StoreCategoryRequest, UpdateCategoryRequest};
-use App\Actions\Category\{
-    CreateCategoryAction,
-    UpdateCategoryAction,
-    DeleteCategoryAction,
-    GetCategoriesAction
-};
-use Illuminate\Container\Attributes\Log;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -36,9 +29,7 @@ class CategoryController extends Controller
 
         public function store(Request $request)
         {
-            $request->validate([
-                'name' => 'required|string|max:255|unique:categories,name'
-            ]);
+         
 
             Category::create([
                 'name' => $request->category_name,
@@ -55,7 +46,7 @@ public function update(Request $request, $id)
 
 
     $category = Category::findOrFail($id);
-    $category->name = $request->name;
+    $category->name = $request->category_name_update;
     $category->description = $request->description;
     $category->save();
 

@@ -13,13 +13,13 @@
 
           <div class="mb-3">
             <label class="form-label">Category Name</label>
-            <input type="text" class="form-control" name="category_name" required>
+            <input type="text" class="form-control" name="category_name" >
             <small class="text-danger d-none" id="nameError"></small>
           </div>
-<div class="mb-3">
-    <label for="category_description" class="form-label">Description</label>
-    <textarea class="form-control" id="category_description" name="category_description" rows="3" required></textarea>
-</div>
+          <div class="mb-3">
+              <label for="category_description" class="form-label">Description</label>
+              <textarea class="form-control" id="category_description" name="category_description" rows="3" ></textarea>
+          </div>
 
         </form>
       </div>

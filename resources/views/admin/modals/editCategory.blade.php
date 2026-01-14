@@ -15,13 +15,13 @@
             <label for="category_name" class="form-label">Category Name</label>
             <input type="hidden" id="category_id" name="category_id">
 
-            <input type="text" class="form-control" id="category_name" name="category_name" required>
+            <input type="text" class="form-control" id="category_name" name="category_name_update" required>
 
           </div>
 
           <div class="mb-3">
     <label for="category_description" class="form-label">Description</label>
-    <textarea class="form-control" id="category_description" name="category_description" rows="3" ></textarea>
+    <textarea class="form-control" id="category_description" name="category_description_update" rows="3" ></textarea>
 </div>
 
         </div>
